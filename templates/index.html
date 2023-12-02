@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/static/assets/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Guide</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body class="corpo">
+
+        <header class="header">        
+            <div class="topo">
+                <div class="intro">
+                   
+                    <a href="{{ url_for('boas') }}">Boas Práticas</a>
+                </div>
+                    <div class="social">           
+                        <a href="https://discord.com/invite/y4bYeEn7xz" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a>                   
+                    </div>
+            </div>   
+            <div class="titulo">
+                <h1 class="firsheadline">Conteúdos para estudar DataScience</h1>
+                    <div class="info">                                    
+                        <h4>Bem-vindo, apaixonados por Ciência de Dados! Aqui somos uma plataforma de recursos de estudo; </h4>
+                        <h4>Como podem perceber criei esse site de forma improvisada, Sem foco em aspectos visuais, afinal sou um ciêntista de dados e não um front-end developer.</h4>
+                        <h4>Vai encontrar diversos roadmaps no site, mas usei como base os tópicos do <a href="https://roadmap.sh/ai-data-scientist">roadmap.sh</a> </h4>  
+                        <h5>Somos uma comunidade no Discord, e com objetivo de melhor organizar os incontáveis links de recomendações para estudo/leitura, fizemos esse site de fácil publicação de todo tipo de conteúdo desde cursos, artigos, vídeos e livros.onde estaremos periodicamente atualizando com base na relevância de alguns conteúdos.</h5>    
+                        <h4>Este site não é de uso exclusivo do servidor, cada tópico está aberto a posts e recomendações, só pedimos que siguam as boas práticas listadas no menu 'Boas Práticas'</h4>   
+                                                     
+                    </div>   
+                    <h4>Bons Estudos.</h4>   
+        </header>
+
+         
+
+        <main class="content">
+
+            <div class="one">
+                <div class="two">
+                    <h2>IA e Ciência</h2>
+                        <div class="three"> 
+                        <img class="img1" src="/static/assets/science.png" alt="">
+                        <p>Explore conceitos fundamentais de forma direta, O que é ser um Cientista de dados, e O que qual a relação entre Dados e Inteligência Artificial </p>
+                        </div>
+                        <a href="{{ url_for('science') }}">Resources</a>
+                </div>   
+                
+                <div class="two">
+                    <h2>Matemática</h2>
+                        <div class="three">  
+                            <img class="img2" src="/static/assets/math.png" alt="">
+                            <p>cálculo, álgebra linear e matrizes. Aborda desde conceitos básicos até aplicações avançadas, proporcionando uma compreensão técnica e prática desses pilares matemáticos.</p>
+                            
+                        </div>    
+                    
+                        <a href="{{ url_for('math') }}">Resources</a>
+                    
+                </div> 
+            </div>
+
+
+            <div class="one">
+                <div class="two">
+                    <h2>Estatística, </h2>
+                        <div class="three"> 
+                        <img class="img3" src="/static/assets/statistic.png" alt="">
+                        
+                        <p> Medidas de centralidade e dispersão, Regressão linear, análise de variância e intervalos de confiança , Análise exploratória de dados, inferência estatística, distribuições de probabilidade e modelagem estatística</p>
+                        </div>
+                        <a href="{{ url_for('statistic') }}">Resources</a>
+                </div> 
+
+                    <div class="two">
+                        <h2>Econometria</h2>
+                        <div class="three"> 
+                        <img class="img4" src="/static/assets/Econometrics.png" alt="">
+                        <p> Ferramentas estatísticas com o objetivo de entender a relação entre variáveis econômicas através da aplicação de um modelo matemático. </p>
+                    </div>
+                    <a href="{{ url_for('econometrics') }}">Resources</a>
+                </div> 
+            </div>
+
+            <div class="one">
+                <div class="two">
+                    <h2>Coding</h2>
+                        <div class="three"> 
+                        <img class="img5" src="/static/assets/code.png" alt="">
+                        
+                        <p>Lógica, python ou R, SQL</p>
+                        </div>
+                        <a href="{{ url_for('coding') }}">Resources</a>
+                </div> 
+
+               
+
+                <div class="two">
+                    <h2>Exploratory Data Analysis(EDA)</h2>
+                        <div class="three"> 
+                        <img class="img5" src="/static/assets/eda.png" alt="">
+                        
+                        <p>A arte de revelar insights valiosos escondidos nos dados, desvendando padrões, anomalias e narrativas que impulsionam descobertas fundamentais."</p>
+                        </div>
+                        <a href="{{ url_for('eda') }}">Resources</a>
+                </div>  
+            </div>
+
+            <div class="one">
+                <div class="two">
+                    <h2>Machine learning</h2>
+                        <div class="three"> 
+                        <img class="img6" src="/static/assets/machine-learning.png" alt="">
+                        
+                        <p>Área da Inteligência Artificial que, por meio de algoritmos, dá aos computadores a capacidade de identificar padrões em dados massivos e fazer previsões (análise preditiva).</p>
+                        </div>
+                        <a href="{{ url_for('ml') }}">Resources</a>
+                </div>   
+                <div class="two">
+                    <h2>Deep Learning</h2>
+                        <div class="three"> 
+                        <img class="img7" src="/static/assets/deep-learning.png" alt="">
+                        <p>modelos de ML baseadas em rede neurais multicamadas, mais abstrato e complexo</p>
+                        </div>
+                        <a href="{{ url_for('dl') }}">Resources</a>
+                </div>  
+            </div>
+
+            <div class="one">
+                <div class="two">
+                    <h2>MLOps</h2>
+                        <div class="three"> 
+                            
+                        <img src="/static/assets/ult.png" alt="">
+                        <p>ML Ops é um paradigma que visa implantar e manter modelos de aprendizado de máquina em produção de forma confiável e eficaz.</p>
+                        </div>
+                    <a href="{{ url_for('mlop') }}">Resources</a>
+                </div>   
+            </div>
+
+            
+
+        </main>
+
+
+        <footer>
+
+            <div class="final">      
+                <h4>Atualizamos Periodicamente cada lista, mas estamos muito mais frequêntes no servidor de estudo Data Nerds</h4> 
+            </div>
+            <div class="discord">
+            <a href="https://discord.com/invite/y4bYeEn7xz" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a>
+            </div>
+        </footer>   
+        
+    </body>
+
+
+</html>

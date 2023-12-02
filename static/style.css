@@ -1,0 +1,227 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 8%;
+    background: #f0f0f0; /* Add a light gray background */
+}
+
+.header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 8px 6px -6px black; /* Add a box shadow */
+    margin-top: -10%;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    margin-top: 8%;
+}
+
+.topo a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.intro a {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    margin-top: 3%;
+}
+
+.intro a:hover {
+    background-color: #555; /* Change the background color on hover */
+    color: rgb(237, 238, 241); /* Change the text color on hover */
+}
+
+.social {
+    margin-right: 10px
+
+}
+
+.titulo {
+    margin-bottom: 20px;
+    padding: 1%;
+}
+
+
+.firsheadline {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.info h4 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.info h5 {
+    box-shadow: #333;
+    margin-bottom: 1%;
+}
+
+.invite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invite h3 {
+    color: #333;
+    margin-right: 20px;
+}
+
+.shareb {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #555;  /* Add a border */
+    box-shadow: 0 8px 6px -6px black; /* Add a box shadow */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition for background color and text color */
+}
+
+.shareb:hover {
+    background-color: #555; /* Change the background color on hover */
+    color: rgb(237, 238, 241); /* Change the text color on hover */
+}
+
+.content {
+    padding: -10%;
+    margin-top: 2%;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.two {
+    background-color: #f4f4f4;
+    padding: 2%;
+    width: calc(50% - 10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.three {
+    display: flex;
+    justify-content:space-between;
+}
+
+.two h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.two img {
+    width: 10%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.two a {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+    margin-bottom: 5px;
+    margin-top: 3%;
+}
+
+.two a:hover {
+    background-color: #555; /* Change the background color on hover */
+    color: rgb(237, 238, 241); /* Change the text color on hover */
+}
+
+.two p {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    text-align: left;
+    margin-left: 1%;
+}
+
+footer {
+    
+    padding: 30px;
+    text-align: center;
+}
+
+.final h4 {
+    color: #121111;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+
+.footer .discord a {
+    display: flex;
+    margin-top: 10%;
+}
+
+/* Your existing CSS here... */
+
+/* Styles for screens with a maximum width of 720px */
+@media screen and (max-width: 720px) {
+ 
+    body {
+        margin: 0;
+        padding: 0.5%;
+        margin-top: 15%;
+    }
+   
+    .topo, .invite {
+        flex-direction: column;
+        align-items: start;
+        font-size: 12px;
+        margin: 5%;
+    }
+
+    .social{
+        margin-top: 5%;
+        
+    }
+
+    .invite h3, .invite a {
+        margin-bottom: px;
+        margin-top: 3%;
+    }
+
+    .one {
+        flex-direction: column;
+    }
+
+    .two {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .two img {
+       display: none;
+    
+    }
+
+    .final > h4 {
+        color: #efe9e9;
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+}

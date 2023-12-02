@@ -1,0 +1,310 @@
+/* Reset some default browser styles */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 10%;
+    padding: 10%;
+    width: calc(80% - 5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 8px 6px -6px black; /* Add a box shadow */
+    margin-top: -20%;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.topo a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.intro a {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    margin-top: 3%;
+}
+
+.intro a:hover {
+    background-color: #555; /* Change the background color on hover */
+    color: rgb(237, 238, 241); /* Change the text color on hover */
+}
+
+.social a {
+    margin-right: 10px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+    padding: 1%;
+}
+
+.firsheadline {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info h4 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.invite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invite h3 {
+    color: #333;
+    margin-right: 20px;
+}
+
+/* Your existing CSS here... */
+
+.form {
+    display: flex;
+    align-items: flex-end;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 3%;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.form input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form input[type="submit"] {
+    padding: 13px 26px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #2f322f;
+}
+
+.form input:invalid {
+    border: 1px solid #090909;
+   
+}
+
+.pesquisa {
+    margin-bottom: 20px;
+   
+}
+
+.pesquisa form {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa input {
+    padding: 8px;
+    margin-right: 8px;
+    width: 99%;
+}
+
+.pesquisa button {
+    padding: 8px 12px;
+    background-color: #040404;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.list li {
+    display: flex;
+    flex-direction:initial;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #555;
+    
+    box-shadow: 0 8px 6px -6px black;
+    transition: background-color 0.3s, color 0.3s;
+    color: rgb(5, 5, 5);
+    background-color: #f4f4f4;
+ }
+ 
+ .list li h2 {
+    margin-right: 5px;
+    color: #222121;
+    font-size: 18px;
+ }
+ 
+ .list li p {
+    margin-right: 5px;
+ }
+ 
+ .list  li  a {
+    margin-left: auto; /* Push the link to the right side of the list item */
+    text-decoration: none; /* Remove default link underline */
+    color: #f0f2f4; /* Set link color */
+    background-color: #251d1d; /* Set background color to red */
+    padding: 1px 3px; /* Add padding to create a button-like appearance */
+    
+    display: inline-block; /* Ensure it behaves like a block element */
+}
+
+.list li a:hover {
+    background-color: #3c3434; /* Change the background color on hover */
+}
+ 
+
+/* Styles for screens with a maximum width of 720px */
+/* Styles for screens with a maximum width of 720px */
+@media screen and (max-width: 720px) {
+    /* Reset some default browser styles */
+ 
+
+    .topo, .invite {
+        flex-direction: column;
+        align-items: start;
+        font-size: 12px;
+        margin-left: 2%;
+        margin-top: 3%;
+    }
+
+
+    .social{
+        margin-top: 8%;
+        margin-left: 0%;
+
+        
+    }
+
+    .firsheadline {
+        margin-left: 2%;
+        margin-bottom: -8%;
+    }
+
+    .titulo  h4 {
+        padding: 10%;
+        margin-left: -8%;
+    }
+
+    .invite h3, .invite a {
+        margin-bottom: -50px;
+       
+        margin-top: -10%;
+    }
+
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+
+    .form label {
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        
+       
+    }
+
+    .form input {
+        flex: 1;
+        border: 1px solid #ccc;
+        box-sizing:content-box;
+        gap: 1%;
+        
+    }
+
+    .form input[type="submit"] {
+        background-color: #000000;
+        color: #fff;
+        cursor: pointer;
+
+    }
+
+    .form input[type="submit"]:hover {
+        background-color: #2f322f;
+    }
+
+    .form input:invalid {
+        border: 1px solid #090909;
+    }
+
+    .pesquisa {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: right;
+    }
+
+    .list li {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #555;
+        box-shadow: 0 4px 6px -6px black;
+        transition: background-color 0.3s, color 0.3s;
+        color: rgb(5, 5, 5);
+        background-color: #f4f4f4;
+    }
+
+    .list li {
+        margin-bottom: 10px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .list li a {
+        text-decoration: none;
+        color: #f0f2f4;
+        background-color: #251d1d;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        
+    }
+
+    .list li a:hover {
+        background-color: #3c3434;
+    }
+
+}
+
+ 

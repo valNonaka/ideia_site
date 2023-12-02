@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Machine Learning</title>
+    <link rel="icon" type="image/png" href="/static/assets/icon.png">
+    <link rel="stylesheet" href="/static/lists.css">
+</head>
+<body>
+    <main>
+
+        <header class="header">        
+            <div class="topo">
+                <div class="intro">
+                    <a href="{{ url_for('home') }}">Voltar</a>
+                    <a href="{{ url_for('boas') }}">Boas Práticas</a>
+                </div>
+                    <div class="social">           
+                        <a href="https://discord.gg/4xRtXWUR" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a>                   
+                    </div>
+            </div>   
+            <div class="titulo">
+                <h1 class="firsheadline">Machine learning</h1>
+                    <div class="info">                                    
+                        <h4>Área da Inteligência Artificial que, por meio de algoritmos, dá aos computadores a capacidade de identificar padrões em dados massivos e fazer previsões (análise preditiva)</h4>                                         
+                    </div>
+                <div class="invite">
+                    <h3>Gostaria de participar desse projeto ?</h3>           
+                </div>                  
+            </div>    
+                            
+        </header>
+        <form class="form" method="post" action="{{ url_for('ml') }}">
+            {{ form.csrf_token }}
+            {{ form.title(size=30, placeholder='Title') }}
+            {{ form.description(size=45, placeholder='Description') }}
+            {{ form.link(placeholder='Link') }}
+            <input type="submit" value="Submit">
+        </form>
+            </div>
+            <div class="pesquisa">
+                <form action="{{ url_for('ml')}}" method="POST">
+                    <input type="text" name="query" placeholder="Enter search query" value="{{ query }}">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="list">
+                            {% if resources %}
+                    <ul>
+                        {% for resource in resources %}
+                            <li>{{ resource[0] }} - {{ resource[1] }}<a href="{{ resource[2] }}">to know more</a></li> 
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        
+    </main>        
+</body>
+</html>
