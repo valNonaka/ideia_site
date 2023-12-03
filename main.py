@@ -21,7 +21,7 @@ app.config['SECRET_KEY'] = 'aloha'
 
 mydb =mysql.connector.connect(host='localhost', 
                               user ='root', 
-                              password ='',
+                              password ='=#.E6HAxG&w5B3=',
                               database = 'resources')
 
 
